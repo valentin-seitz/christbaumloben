@@ -7,9 +7,11 @@ environment:
   sdk: '>=3.0.3 <4.0.0'
 
 dependencies:
+  animated_flip_widget: ^0.0.2
   file_selector: ^1.0.3
   flutter:
     sdk: flutter
+  flutter_animate: ^4.5.2
   rxdart: ^0.28.0
   stacked: ^3.4.0
   stacked_services: ^1.1.0
@@ -24,4 +26,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/
 
