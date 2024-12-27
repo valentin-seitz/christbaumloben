@@ -22,7 +22,7 @@ class PersonService {
   addPersons(List<XFile> files) {
     Set<String> person_names = {};
     for (var image_file in files) {
-      var image_file_name = image_file.path.split("/").last.split(".").first;
+      var image_file_name = image_file.name.split(".").first;
       var p_names = image_file_name.split("__");
       for (var p_name in p_names) {
         person_names.add(p_name.split("_").first);
