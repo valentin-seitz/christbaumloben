@@ -34,7 +34,7 @@ class PersonService {
     files.forEach((file) => _personsInImage[file.path] = []);
 
     for (var image_file in files) {
-      var image_file_name = image_file.path.split("/").last.split(".").first;
+      var image_file_name = image_file.name.split(".").first;
       var clean_p_names = image_file_name
           .split("__")
           .map((name) => name.split("_").first)
